@@ -4,8 +4,10 @@ import PixelChanger from "../PixelChanger";
 const Chat = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-4 md:gap-10">
-      <img
-        src="/public/svg/clickme.svg"
+      <Image
+        width={200}
+        height={200}
+        src="/svg/clickme.svg"
         alt="Click me to chat right now!"
         className="absolute z-10 scale-50 rotate-6 -translate-y-[150%] translate-x-1/3 md:translate-x-0"
       />
