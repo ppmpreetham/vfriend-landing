@@ -1,6 +1,6 @@
 # VFriend
 
-> A fully offline app that helps you instantly see which of your friends are free at any given time — no calls, no spam texts, no timetable chaos.
+> A fully offline app that helps you instantly see which of your friends are free at any given time, no calls, no spam texts, no timetable chaos.
 
 ## Documentation
 
@@ -23,11 +23,11 @@
 ## Core Idea
 
 VFriend was born out of frustration:  
-Instead of digging through WhatsApp/Discord chats for timetables, or spamming friends with *“Where are you?”* messages, one tap now shows you who’s free, where they are, and what spots are chill.  
+Instead of digging through WhatsApp/Discord chats for timetables, or spamming friends with *“Where are you?”* messages, one tap now shows you who's free, where they are, and what spots are chill.  
 
-- **Fully Offline** — No internet required  
-- **Transparent** — Open source & verifiable  
-- **Minimal Data** — Only timetable, name, reg. no, and hangout spots stored locally  
+- **Fully Offline**, No internet required  
+- **Transparent**, Open source & verifiable  
+- **Minimal Data**, Only timetable, name, reg. no, and hangout spots stored locally  
 
 ## Sitemap Reference
 

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "VFriend | Offline Timetable App for VIT Students",
   description:
-    "VFriend is a fully offline app for VIT students that shows when your friends are free and where they are — no calls, no texts, no internet",
+    "VFriend is a fully offline app for VIT students that shows when your friends are free and where they are, no calls, no texts, no internet",
   keywords:
     "VFriend, offline app, friends timetable, student schedule app, college timetable sharing, free time finder, offline timetable, no internet app, student productivity tool, find free friends, campus life app, timetable manager, study group planner, meet friends easily, offline schedule manager, VFriend VIT chennai, VFriend app",
   icons: [

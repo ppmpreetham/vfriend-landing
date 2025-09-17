@@ -112,12 +112,52 @@ export default function App() {
         <RotatingSquares />
         <Profile />
         <Chat />
-        <div className="text-black text-sm">
-          VFriend is a fully offline app designed specifically for students who are tired of the constant back-and-forth of asking, "Where are you?" or "When are you free?" With VFriend, you no longer need to rely on endless group chats, phone calls, or waiting for replies to coordinate plans with your friends. Instead, the app leverages your class timetable and your friend's schedules to show real-time availability, so you can instantly see who is free at any given moment.
-          What sets VFriend apart is its commitment to privacy and offline functionality. All your data stays on your device, there's no cloud storage, no external servers, and no need for an internet connection. This means your schedule and your friend's information remain private and secure, accessible only to you and those you choose to share with.
-          VFriend is lightweight, fast, and easy to use. Simply add your timetable, connect with friends locally, and let the app handle the rest. Whether you want to organize a quick study session, grab lunch, or just hang out, VFriend makes it effortless to find the perfect time without the hassle.
-          Experience a new way to stay connected and make the most of your campus life, without sacrificing your privacy or relying on constant connectivity. VFriend is your smart, simple, and secure companion for student life.
+        <div className="text-black text-sm fixed z-[-999]">
+          <p>
+            VFriend is a fully offline app designed specifically for students who are tired of the constant back-and-forth of asking, "Where are you?" or "When are you free?" Instead of juggling WhatsApp groups, random Discord messages, or missed calls, VFriend offers one simple answer: the ability to instantly know when your friends are free and where they are most likely to be. Whether they're at the library, in class, grabbing food at the canteen, or back at the hostel, you'll know with a single tap. No waiting for replies, no lost time, no chaos.
+          </p>
+
+          <p>
+            What makes VFriend different from other scheduling or timetable apps is its focus on privacy and offline functionality. Many modern apps demand cloud accounts, internet connectivity, or third-party logins. VFriend does the opposite. It keeps everything local to your device. Your timetable, your name, your registration number, and your favorite campus hangout spots stay private. Nothing leaves your phone unless you deliberately share it with a friend. No internet, no servers, no unnecessary data collection. It's built for students who want convenience without compromise.
+          </p>
+
+          <p>
+            Setting up VFriend is quick and painless. All you need is your official timetable from your university portal. Upload the HTML file, and the app instantly processes your schedule into a clean, intuitive interface. From there, you can link with friends locally. The app then cross-references your timetables to reveal who's free right now and who will be free next. Planning becomes effortless. Instead of wasting time coordinating across multiple chats, you and your friends can focus on actually meeting, studying, or hanging out.
+          </p>
+
+          <p>
+            This simplicity is by design. VFriend was born out of real frustration. As a student, I often found myself digging through endless chat histories to find old timetable screenshots that friends had sent months ago. Every time I wanted to plan something, I'd repeat the cycle, scrolling, searching, messaging, waiting. It was inefficient and, honestly, kind of ridiculous. I knew there had to be a better way. So what started as a small script to organize timetables evolved into a fully-fledged app with an intuitive UI and a focus on what students really need.
+          </p>
+
+          <p>
+            VFriend is lightweight and efficient. Because it doesn't depend on the internet or bulky background processes, it runs smoothly on almost any phone without draining your battery. The interface is deliberately clean and minimal, designed so that students can glance at their screen and get the information they need instantly. No unnecessary clutter, no confusing navigation. Just clarity and speed.
+          </p>
+
+          <p>
+            Another key benefit of VFriend is how it helps students reclaim their time. Campus life can be hectic, classes, labs, projects, and exams often leave little room for coordination. With VFriend, instead of spending fifteen minutes figuring out when everyone is free, you can know in seconds. That extra time can go into something meaningful: focusing on assignments, meeting new people, or just relaxing. The app essentially eliminates the small but constant friction of campus coordination.
+          </p>
+
+          <p>
+            Privacy is not just an add-on, it's the foundation of VFriend. In an age where almost every app wants to track you, collect your data, or connect to external servers, VFriend takes the opposite approach. It doesn't need internet access. It doesn't track your location. It doesn't sync with any external service. Your data is yours, and it stays on your device. This makes the app secure by default, but it also builds trust among friends. When you share your timetable through VFriend, you know exactly what you're sharing and nothing more.
+          </p>
+
+          <p>
+            The app is also versatile. Students use it in different ways. Some use it primarily to find study partners before exams. Others rely on it for planning quick lunch breaks or evening hangouts. For those deeply involved in clubs or societies, it becomes a handy tool to quickly coordinate group meetings. No matter the use case, the principle remains the same: reduce unnecessary communication overhead and make coordination seamless.
+          </p>
+
+          <p>
+            VFriend is not just a utility, it's a reflection of student life and the challenges of staying connected without losing time. It transforms the ordinary hassle of timetable management into an opportunity to connect more easily and more often. And because it's offline, it respects both your privacy and your independence. You control your schedule, and you decide how and when to share it.
+          </p>
+
+          <p>
+            Ultimately, VFriend is about more than just timetables. It's about making student life smoother, less stressful, and more enjoyable. It's about helping you spend less time planning and more time living. Whether you're a freshman adjusting to the chaos of campus schedules or a senior trying to balance projects, internships, and social life, VFriend is a small but powerful tool to help you make the most of your time.
+          </p>
+
+          <p>
+            Experience campus coordination like never before. With VFriend, you don't have to chase down friends, spam messages, or scroll endlessly through chat logs. You get instant clarity with a single tap, all while keeping your privacy intact. Fast, secure, offline, and designed with students in mind, that's the promise of VFriend.
+          </p>
         </div>
+
 
         <CubePage isDesktop={isDesktop} />
         <FlowingMenu
