@@ -86,10 +86,10 @@ export default function App() {
           <HeroElements />
           <div className="flex flex-col md:flex-row items-center max-w-5xl gap-8 md:gap-12 w-full justify-center">
             <div className="flex flex-col items-center text-center gap-4 md:gap-6 md:w-1/2">
-              <h1 className="text-3xl md:text-5xl font-bold text-primary tracking-tight">
+              <h2 className="text-3xl md:text-5xl font-bold text-primary tracking-tight">
                 <span className="font-against">VF</span>
                 riend
-              </h1>
+              </h2>
               <p className="text-lg md:text-xl">
                 A Fully Offline app that helps you find which of your{" "}
                 <span className="bg-primary rounded-xl text-black px-2">

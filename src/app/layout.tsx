@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +18,20 @@ export const metadata: Metadata = {
     "VFriend is a fully offline app for VIT students that shows when your friends are free and where they are — no calls, no texts, no internet",
   keywords:
     "VFriend, offline app, friends timetable, student schedule app, college timetable sharing, free time finder, offline timetable, no internet app, student productivity tool, find free friends, campus life app, timetable manager, study group planner, meet friends easily, offline schedule manager, VFriend VIT chennai, VFriend app",
-  icons: [{ rel: "icon", url: "/app_icon.png", type: "image/svg+xml" }],
+  icons: [
+    { rel: "icon", url: "/app_icon.png", type: "image/svg+xml" },
+    { rel: "apple-touch-icon", url: "/app_icon.png" }
+  ],
+  appleWebApp: {
+    title: "VFriend",
+    statusBarStyle: "black-translucent",
+    startupImage: [
+      {
+        url: "/apple-splash-2048-2732.png",
+        media: "(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      }
+    ]
+  },
   openGraph: {
     url: "https://vfriend.preetham.top",
     type: "website",
@@ -49,30 +61,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta charSet="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/app_icon.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="vfriend, app, college app, timetable app, friends app, offline app" />
-        <meta name="rating" content="general" />
-        {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://vfriend.preetham.top" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="VFriend" />
-        <meta property="og:description" content="A Fully Offline app that helps you find which of your friends are free at any given point of time" />
-        <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/05dd8b9f-81c2-468e-89f8-0d255cb18ded.jpg?token=fSN-q0CaWR3dAwe9eGsUfTr0XUHmUd8hO4lFTDg4oLs&height=600&width=1200&expires=33290121823" />
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="vfriend.preetham.top" />
-        <meta property="twitter:url" content="https://vfriend.preetham.top" />
-        <meta name="twitter:title" content="VFriend" />
-        <meta name="twitter:description" content="A Fully Offline app that helps you find which of your friends are free at any given point of time" />
-        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/05dd8b9f-81c2-468e-89f8-0d255cb18ded.jpg?token=fSN-q0CaWR3dAwe9eGsUfTr0XUHmUd8hO4lFTDg4oLs&height=600&width=1200&expires=33290121823" />
-        {/* Translation Preventions */}
-        <meta httpEquiv="x-dns-prefetch-control" content="off" />
-        <script src="https://unpkg.com/react-scan/dist/auto.global.js"></script>
-        <title>VFriend</title>
-      </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>

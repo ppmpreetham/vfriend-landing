@@ -127,9 +127,9 @@ const Navbar = ({}) => {
         <div className="menu-bg absolute inset-0 bg-primary clip-path-[polygon(0_0,0_0,0_100%,0_100%)]"></div>
         <div className="h-screen flex flex-col border border-t">
           <div className="fixed top-0 left-0 w-full z-[100] p-6 flex justify-between items-center">
-            <h1>
+            <h2>
               <Title open={true} onLinkClick={handleLinkClick} />
-            </h1>
+            </h2>
             <div className="z-[101] cursor-pointer">
               <Close isOpen={isOpen} toggleOpen={toggleMenu} />
             </div>
