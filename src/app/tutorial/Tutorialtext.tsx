@@ -3,11 +3,11 @@ import MagneticButton from "../../components/MagneticButton";
 import { useState } from "react";
 import Image from "next/image";
 
-import vtoptimetable from "/tutorialimages/vtoptimetable.png";
-import choosingsem from "/tutorialimages/choosingsem.png";
-import downloadhtml from "/tutorialimages/downloading-html.jpg";
-import fillInstructions from "/tutorialimages/fill.jpg";
-import uploadtt from "/tutorialimages/upload.jpg";
+import vtoptimetable from "/public/tutorialimages/vtoptimetable.png";
+import choosingsem from "/public/tutorialimages/choosingsem.png";
+import downloadhtml from "/public/tutorialimages/downloading-html.jpg";
+import fillInstructions from "/public/tutorialimages/fill.jpg";
+import uploadtt from "/public/tutorialimages/upload.jpg";
 
 interface Instruction {
   title: string;

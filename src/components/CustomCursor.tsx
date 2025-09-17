@@ -1,10 +1,15 @@
-import { useEffect, useRef } from "react";
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 const CustomCursor = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+    
     const handleMouseMove = (event: MouseEvent) => {
       if (cursorRef.current) {
         gsap.to(cursorRef.current, {
@@ -22,6 +27,11 @@ const CustomCursor = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  // Don't render anything during SSR
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div
