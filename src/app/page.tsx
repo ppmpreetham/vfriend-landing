@@ -16,6 +16,7 @@ import Footer from "../components/mainpage/DownloadApp";
 import CustomCursor from "../components/CustomCursor";
 import Profile from "../components/Profile";
 import CubePage from "../components/mainpage/CubePage";
+import ReadMore from "@/components/ReadMore";
 
 gsap.registerPlugin(useGSAP, ScrollSmoother, ScrollTrigger);
 
@@ -111,6 +112,11 @@ export default function App() {
         <RotatingSquares />
         <Profile />
         <Chat />
+        <ReadMore
+          preview="VFriend is a fully offline app that helps you see when your friends are free."
+          fullText="VFriend is a fully offline app built for students who are tired of asking 'Where are you?' or 'When are you free?'. Instead of calls and endless chats, it shows real-time availability using timetables. No internet, no cloud — just local, private data on your device."
+        />
+
         <CubePage isDesktop={isDesktop} />
         <FlowingMenu
           items={[
