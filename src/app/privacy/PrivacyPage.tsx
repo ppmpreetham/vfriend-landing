@@ -1,5 +1,5 @@
-import { LinkPreview } from "../components/HoverLink";
-import MarkImportant from "../components/Important";
+import { LinkPreview } from "../../components/HoverLink";
+import MarkImportant from "../../components/Important";
 
 const PrivacyPage = () => {
   return (

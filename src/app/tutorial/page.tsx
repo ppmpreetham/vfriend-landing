@@ -1,13 +1,14 @@
-import Navbar from "../components/Navbar";
+'use client'
+import Navbar from "../../components/Navbar";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import FlowingMenu from "../components/FlowMenu";
-import Footer from "../components/mainpage/DownloadApp";
-import CustomCursor from "../components/CustomCursor";
-import CubePage from "../components/mainpage/CubePage";
+import FlowingMenu from "../../components/FlowMenu";
+import Footer from "../../components/mainpage/DownloadApp";
+import CustomCursor from "../../components/CustomCursor";
+import CubePage from "../../components/mainpage/CubePage";
 import Tutorialtext from "./Tutorialtext";
 
 gsap.registerPlugin(useGSAP, ScrollSmoother, ScrollTrigger);
@@ -16,9 +17,12 @@ export default function About() {
   const main = useRef<HTMLDivElement>(null);
   const smoother = useRef<ScrollSmoother | null>(null);
 
-  const [isDesktop, setIsDesktop] = useState(
-    window.innerHeight <= window.innerWidth
-  );
+  const [isDesktop, setIsDesktop] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerHeight <= window.innerWidth;
+    }
+    return false;
+  });
 
   useEffect(() => {
     const handleResize = () => {

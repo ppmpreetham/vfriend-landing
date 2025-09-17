@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import MagneticButton from "../components/MagneticButton";
+import MagneticButton from "../../components/MagneticButton";
 import { useState } from "react";
 import Image from "next/image";
 
