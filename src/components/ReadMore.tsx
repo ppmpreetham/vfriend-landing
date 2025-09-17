@@ -12,7 +12,7 @@ const ReadMore = ({ preview, fullText, className = "" }: ReadMoreProps) => {
 
   return (
     <div className={`space-y-2 ${className}`}>
-      <p className="text-gray-700">
+      <p className="text-black">
         {expanded ? fullText : preview}
       </p>
       <MagneticButton

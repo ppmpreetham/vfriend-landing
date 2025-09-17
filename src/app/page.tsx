@@ -112,10 +112,12 @@ export default function App() {
         <RotatingSquares />
         <Profile />
         <Chat />
-        <ReadMore
-          preview="VFriend is a fully offline app that helps you see when your friends are free."
-          fullText="VFriend is a fully offline app built for students who are tired of asking 'Where are you?' or 'When are you free?'. Instead of calls and endless chats, it shows real-time availability using timetables. No internet, no cloud — just local, private data on your device."
-        />
+        <div className="text-black text-sm">
+          VFriend is a fully offline app designed specifically for students who are tired of the constant back-and-forth of asking, "Where are you?" or "When are you free?" With VFriend, you no longer need to rely on endless group chats, phone calls, or waiting for replies to coordinate plans with your friends. Instead, the app leverages your class timetable and your friend's schedules to show real-time availability, so you can instantly see who is free at any given moment.
+          What sets VFriend apart is its commitment to privacy and offline functionality. All your data stays on your device, there's no cloud storage, no external servers, and no need for an internet connection. This means your schedule and your friend's information remain private and secure, accessible only to you and those you choose to share with.
+          VFriend is lightweight, fast, and easy to use. Simply add your timetable, connect with friends locally, and let the app handle the rest. Whether you want to organize a quick study session, grab lunch, or just hang out, VFriend makes it effortless to find the perfect time without the hassle.
+          Experience a new way to stay connected and make the most of your campus life, without sacrificing your privacy or relying on constant connectivity. VFriend is your smart, simple, and secure companion for student life.
+        </div>
 
         <CubePage isDesktop={isDesktop} />
         <FlowingMenu
